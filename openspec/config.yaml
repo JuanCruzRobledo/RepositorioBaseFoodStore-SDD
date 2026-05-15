@@ -1,20 +1,23 @@
 schema: spec-driven
 
-# Project context (optional)
-# This is shown to AI when creating artifacts.
-# Add your tech stack, conventions, style guides, domain knowledge, etc.
-# Example:
-#   context: |
-#     Tech stack: TypeScript, React, Node.js
-#     We use conventional commits
-#     Domain: e-commerce platform
+context: |
+  Food Store — e-commerce de productos alimenticios full-stack.
+  Stack: FastAPI + SQLModel + PostgreSQL (backend), React + TypeScript + Vite (frontend).
+  Convenciones: Conventional Commits, kebab-case para changes, prefijo us-NNN- cuando mapea a US.
+  Base de conocimiento en knowledge-base/ (10 canonicos + extras opcionales).
+  Reglas operativas en AGENTS.md raiz.
+  Indice canonico de changes en CHANGES.md (raiz) con arbol de dependencias, gates de paralelismo, camino critico y governance.
 
-# Per-artifact rules (optional)
-# Add custom rules for specific artifacts.
-# Example:
-#   rules:
-#     proposal:
-#       - Keep proposals under 500 words
-#       - Always include a "Non-goals" section
-#     tasks:
-#       - Break tasks into chunks of max 2 hours
+rules:
+  proposal:
+    - Referenciar las US implementadas (formato US-NNN).
+    - Listar dependencias de la KB en knowledge-base/ que respaldan la propuesta.
+    - Incluir seccion "Non-goals" explicita.
+  design:
+    - Documentar patrones aplicados con referencia a 08_arquitectura_propuesta.md.
+    - Explicitar decisiones tomadas con formato DD-NN.
+    - Listar variables de entorno nuevas si las hay.
+  tasks:
+    - Tareas atomicas de 30 a 60 minutos.
+    - Cada tarea referencia el archivo de la KB que la respalda.
+    - Tests primero (TDD) en logica de dominio.
