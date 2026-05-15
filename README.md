@@ -161,8 +161,8 @@ git checkout clase-demo
 | `step-2-skills-installed` | Después de instalar las skills (las skills viven en `~/.agents/skills/`, no en el repo) |
 | `step-3-kb-generated` | Base de conocimiento generada en `knowledge-base/` (10 archivos canónicos + README) |
 | `step-4-openspec-init` | OpenSpec inicializado: `openspec/`, `.opencode/`, `.claude/` |
-| `step-5-agents-configured` | `AGENTS.md` y `openspec/config.yaml` con context y rules del proyecto |
-| `step-6-roadmap-done` | `CHANGES.md` (raíz) con árbol de dependencias, gates, camino crítico y 10 changes |
+| `step-5-roadmap-done` | `CHANGES.md` (raíz) con árbol de dependencias, gates, camino crítico y 10 changes |
+| `step-6-agents-configured` | `AGENTS.md` (referencia `CHANGES.md`) y `openspec/config.yaml` con context y rules |
 | `step-7a-proposed` | `us-000-setup` propuesto: proposal + design + 4 specs + tasks |
 | `step-7b-applied` | `us-000-setup` implementado: backend FastAPI + frontend Vite + tests |
 | `step-7c-archived` | `us-000-setup` archivado: specs sincronizados, change cerrado |
