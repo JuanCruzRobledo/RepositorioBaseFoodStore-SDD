@@ -162,7 +162,7 @@ git checkout clase-demo
 | `step-3-kb-generated` | Base de conocimiento generada en `knowledge-base/` (10 archivos canónicos + README) |
 | `step-4-openspec-init` | OpenSpec inicializado: `openspec/`, `.opencode/`, `.claude/` |
 | `step-5-agents-configured` | `AGENTS.md` y `openspec/config.yaml` con context y rules del proyecto |
-| `step-6-roadmap-done` | `openspec/roadmap.md` con los 10 changes y sus dependencias |
+| `step-6-roadmap-done` | `CHANGES.md` (raíz) con árbol de dependencias, gates, camino crítico y 10 changes |
 | `step-7a-proposed` | `us-000-setup` propuesto: proposal + design + 4 specs + tasks |
 | `step-7b-applied` | `us-000-setup` implementado: backend FastAPI + frontend Vite + tests |
 | `step-7c-archived` | `us-000-setup` archivado: specs sincronizados, change cerrado |
@@ -178,7 +178,7 @@ git checkout clase-demo              # volver al estado final
 ### Skills usadas en la clase
 
 - **kb-creator** — genera la base de conocimiento en `knowledge-base/`. Repo: [JuanCruzRobledo/kb-creator](https://github.com/JuanCruzRobledo/kb-creator).
-- **roadmap-generator** — genera `openspec/roadmap.md` desde la KB. Repo: [JuanCruzRobledo/roadmap-generator](https://github.com/JuanCruzRobledo/roadmap-generator).
+- **roadmap-generator** — genera `CHANGES.md` (raíz) desde la KB. Repo: [JuanCruzRobledo/roadmap-generator](https://github.com/JuanCruzRobledo/roadmap-generator).
 
 Instalación:
 
